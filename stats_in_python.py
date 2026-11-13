@@ -55,7 +55,7 @@ def calculate_average(numbers:list)->float:
 def get_max_and_min(numbers:list)->tuple[float, float]:
     # TODO - Complete the function to return a tuple with the maximum and minimum
     # values in the list, in that order
-    
+
     # Step 1: Set both maximum and minimum to the first number, then check the rest of the list against them
     maximum_value = numbers[0]
     minimum_value = numbers[0]
@@ -67,7 +67,7 @@ def get_max_and_min(numbers:list)->tuple[float, float]:
             minimum_value = number
     # Step 3: Return the maximum first, then the minimum
     return maximum_value, minimum_value
-    
+
 
 def calculate_variance(numbers:list)->float:
     # TODO - Complete the function to return the variance of the numbers in the list
@@ -88,7 +88,7 @@ def calculate_variance(numbers:list)->float:
 def calculate_std_dev(numbers:list)->float:
     # TODO - Complete the function to return the standard deviation of the numbers in the list
 
-    # Step 1:  Use calculate_variance (the function above) to work out the variance, and store it in variance
+    # Step 1: Use calculate_variance (the function above) to work out the variance, and store it in variance
     variance = calculate_variance(numbers)
     # Step 2: The standard deviation is the square root of the variance
     return math.sqrt(variance)
